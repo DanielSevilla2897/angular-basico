@@ -1,0 +1,23 @@
+<h1>Listado de Heroes</h1>
+
+<ul>
+    <!--
+        let hero of heroes significa: recorre arreglo heroes y cada valor metelo en hero
+        let i = index significa: mete el index de cada iteración en i
+    -->
+    <li *ngFor="let hero of heroes; let i = index">
+        {{i}} {{hero}}
+    </li>
+</ul>
+
+<button (click)="borrarHeroe()">
+    Borrar
+</button>
+
+<span *ngIf=" eliminado !== '' ; else noBorrado">
+    Elemento eliminado: {{eliminado}}
+</span>
+
+<ng-template #noBorrado>
+    Ningun elemento borrado
+</ng-template>
