@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Personaje } from '../interface/interface';
+import { DbzService } from '../services/dbz.service';
 
 
 
@@ -28,6 +29,14 @@ export class MainPageComponent {
     }
     
   ]
+
+  agregarNuevoPersonaje( personaje: Personaje){
+    this.personajes.push( personaje );
+  }
+
+  constructor( private dbzService: DbzService ){
+
+  }
 
   
 }
