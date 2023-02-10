@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+strong{
+   color: #ff5c3d;
+}
+
+.card-text{
+   font-size: 14px;
+}
+
+.active{
+   background-color: #ffffff3b;
+}
+
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+   border-radius: 10px;
+   background-color: purple;
+}
